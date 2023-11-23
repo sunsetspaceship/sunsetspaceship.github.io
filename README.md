@@ -1,2 +1,2 @@
-# Great-Grocery-List
- Great Grocery List
+# Grocery-List
+Grocery List
