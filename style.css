@@ -1,27 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6cc; /* light pink with a pinch of orange */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-weight: bold;
+    color: #800080; /* dark purple */
+    font-family: 'cursive'; /* using a cute font */
 }
 
 input {
-    padding: 8px;
-    margin-right: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
 }
 
 button {
-    padding: 8px;
+    padding: 10px;
+    background-color: #800080; /* dark purple */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column; /* Updated to column layout */
+    align-items: center; /* Center content horizontally */
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+span {
+    flex: 1;
+}
+
+button.delete-button {
+    background-color: #800080; /* dark purple */
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* slightly larger than the item text */
 }
