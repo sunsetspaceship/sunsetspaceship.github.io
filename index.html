@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Grocery List</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List App</title>
 </head>
-
 <body>
 
-    <div class="container">
-        <h1>Grocery List</h1>
-        <input type="text" id="addItemInput" placeholder="Add item...">
-        <button>Add to List</button>
-        <ul id="groceryList"></ul>
-    </div>
+<div id="container">
+<div id="block1">
+<h1>Grocery List</h1>  
+</div>
 
-    <script src="script.js"></script>
+<div class="row">
+<input type="text" id="input" placeholder="Add item...">
+<button id="add-btn" onclick="addItem()">Add</button>
+</div>
+
+<div class="note-block">
+
+<ul id="list">
+    <!-- <li class="checked">Banana</li>  
+    <li>Apple</li>  
+    <li>Grape</li> -->
+</ul>
+ 
+</div>
+
+</div>
+
 </body>
-
+<script src="app.js" async></script>
 </html>
+

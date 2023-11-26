@@ -1,0 +1,149 @@
+body
+{
+   
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFE3F1ff;
+}
+
+#block1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#container {
+    margin: 0 10%;
+}
+
+h1 {
+    width: 100%;
+    background-color: #E92E35ff;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    color: #E92E35ff;
+    
+}
+
+.row {
+    
+    border: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+#add-btn 
+{
+
+border: none;
+ padding: 15px 50px;
+ outline: none;
+ background-color: #E92E35ff;
+ color: white;
+ font-size: 16px;
+ cursor: pointer;
+ border-radius: 40px;
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ -ms-border-radius: 40px;
+ -o-border-radius: 40px;
+}
+
+.note-block {
+    margin-top: 15px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 50vh;
+    width: 100%;
+    border: solid 5px #E92E35ff;
+    border-radius: 15px; /* Adjust the value to control the roundness of the corners */
+}
+
+#list {
+    color: #E92E35ff;
+    list-style: none;
+}
+
+.note-block li {
+    padding: 8px;
+    padding-left: 30px;
+    border-bottom: 2px solid #E92E35ff; /* Add a border at the bottom of each li */
+}
+
+ul li {
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-position: center;
+    top: 8px;
+    left: -0px;
+    border: 2px solid #E92E35ff;
+}
+
+ul li.checked{
+    color: #E92E35ff;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+
+}
+
+ul li.checked::before {
+    background-color: #E92E35ff;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-position: center;
+    top: 8px;
+    left: -0px;
+    border: 2px solid #E92E35ff;
+}
+
+ul li span {
+    position: relative;
+    font-size: 14x;
+    padding: 10px;
+    
+}
